@@ -426,7 +426,7 @@ public class BCauldron {
         if (materialInHand == Material.AIR || materialInHand == Material.BUCKET) {
             return;
 
-        } else if (materialInHand == MaterialUtil.CLOCK) {
+        } else if (materialInHand != MaterialUtil.BUCKET || materialInHand != MaterialUtil.GLASS_BOTTLE) {
             printTime(player, clickedBlock);
             return;
 
@@ -530,7 +530,7 @@ public class BCauldron {
         if (!config.isEnableCauldronParticles()) {
             return;
         }
-        
+
         var scheduler = BreweryPlugin.getScheduler();
         for (BCauldron cauldron : bcauldrons.values()) {
             cauldron.particleRecipe = null;

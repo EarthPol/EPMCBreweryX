@@ -56,6 +56,8 @@ public final class MaterialUtil {
     public static final Material SOUL_CAMPFIRE = getMaterialSafely("SOUL_CAMPFIRE");
     public static final Material SOUL_FIRE = getMaterialSafely("SOUL_FIRE");
     public static final Material CLOCK = getV1_13MaterialSafely("CLOCK", "WATCH");
+    public static final Material BUCKET = getMaterialSafely("BUCKET");
+    public static final Material GLASS_BOTTLE = getMaterialSafely("GLASS_BOTTLE");
 
 
     public static Method getMethod(String clazz, String name, Class<?>... parameterTypes) {
